@@ -11,19 +11,19 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, client) => {
     const db = client.db('TodoApp')
 
     //deleteMany
-    db.collection('Todos').deleteMany({text : 'abc'}).then((result)=> {
-        console.log(result);
-    })
+    // db.collection('Todos').deleteMany({text : 'abc'}).then((result)=> {
+    //     console.log(result);
+    // })
 
-    //deleteOne
-    db.collection('Todos').deleteOne({text : 'abc'}).then((result)=> {
-        console.log(result);
-    })
+    // //deleteOne
+    // db.collection('Todos').deleteOne({text : 'abc'}).then((result)=> {
+    //     console.log(result);
+    // })
 
-    //findOneAndDelete
-    db.collection('Todos').findOneAndDelete({text : 'abc'}).then((result)=> {
-        console.log(result);
-    })
+    // //findOneAndDelete
+    // db.collection('Todos').findOneAndDelete({text : 'abc'}).then((result)=> {
+    //     console.log(result);
+    // })
    
     // client.close();
 })
